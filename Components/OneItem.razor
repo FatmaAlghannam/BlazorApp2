@@ -1,0 +1,16 @@
+﻿
+<div class="card">
+
+    <div class="card-body">@Data.Description</div>
+     
+    </div>
+
+ 
+        @code {
+    [Parameter] public Models.Entity.TodoItem Data { get; set; }
+        protected override void OnInitialized()
+        {
+            base.OnInitialized();
+        }
+        }
+

@@ -1,0 +1,15 @@
+﻿
+<div class = "card">
+    <div class=" card-body">
+        @data.Description (@(data.IsCompleted ? "Done" : "On going Progress"))
+    </div>
+</div>
+@code{
+    [Parameter] public BlazorApp2.Models.Entity.TodoItem 
+    data { get; set; }
+
+
+
+
+
+}

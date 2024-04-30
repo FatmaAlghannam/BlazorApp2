@@ -1,0 +1,18 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+
+<OneItem Data="item1"></OneItem>
+@code
+{
+    public BlazorApp2.Models.Entity.TodoItem item1 = new BlazorApp2.Models.Entity.TodoItem
+        {
+            Id = 1,
+            IsCompleted = false,
+            DueDate = DateTime.Now,
+            Description = "Completed all tasks"
+        };
+    }
+  
+
